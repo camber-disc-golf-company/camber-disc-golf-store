@@ -1,0 +1,27 @@
+.team-members {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.member {
+  width: max-content;
+}
+
+.player-img {
+  width: 55%;
+}
+
+.fit-content {
+  width: fit-content;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.center-text {
+  display: flex;
+  justify-content: center;
+}

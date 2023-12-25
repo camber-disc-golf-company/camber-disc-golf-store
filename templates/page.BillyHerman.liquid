@@ -1,0 +1,43 @@
+<script>
+  window.onload = function() {
+    document.getElementById('rating').innerHTML = getRating();
+  };
+
+  function getRating(){
+   fetch('https://www.pdga.com/player/144433', { mode: 'no-cors'})
+    .then(function (response) {
+        var parser = new DOMParser();
+
+        // Parse the text
+        var doc = parser.parseFromString(response.text(), "text/html");
+        return doc.getElementsByClassName('current-rating');
+    });
+  }
+</script>
+
+<div>
+  <!-- Player Name -->
+  <h1>Billy Herman</h1>
+  <!-- Main Image here -->
+  <div style="display: flex; justify-content: center;">
+    <img
+      src="https://cdn.shopify.com/s/files/1/0602/4976/8102/files/Tanner.jpg?v=1674102821"
+      alt="Tanner McCartney"
+      style="width:35vh; height:40vh;"
+    >
+  </div>
+  <br>
+  <br>
+  <div>
+    <h3>Player Info</h3>
+    <ul>
+      <li>Division: MPO</li>
+      <li>PDGA#: 144916</li>
+      <li id="rating">Current Rating:</li>
+    </ul>
+  </div>
+
+  <!-- "Table of sorts" containing player information -->
+
+  <!-- Q&A - Make 3 cards for now with basic questions -->
+</div>

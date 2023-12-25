@@ -1,0 +1,8 @@
+{% if customer.tags contains 'teamcamber' %}
+{% section 'collection-template' %}
+
+{% else %}
+<h3> <i>Please Login to Access the VIP Section</i> </h3>
+{{ pages.camber-private.content }}
+
+{% endif %}
