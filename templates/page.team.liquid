@@ -31,8 +31,11 @@
   }
 
   .outer-card {
+    height: 300px;
+    width: 400px;
     box-shadow: 1px 1px 5px 3px black;
     border-radius: 11px;
+    position: relative;
   }
 
   .image {
@@ -42,33 +45,30 @@
   }
 
   .container {
-    position: relative;
-    top: -299px;
+    position: absolute;
+    top: 5px;
     display: flex;
+    left: 5px;
   }
 </style>
 
 <h1>Team Camber</h1>
 
 <div id="div" class="team-members">
+
+</div>
+
+{% comment %} <div id="div" class="team-members">
   <div class="outer-card">
     <div class="member card">
-
     </div>
     <div class="container">
       <img
         src="https://cdn.shopify.com/s/files/1/0602/4976/8102/files/Tanner.jpg?v=1674102821"
         alt="Tanner McCartney"
-        class="player-img image"
+        style="border-radius: 11px; width: 290px; border: solid white 1px;"
       >
-      {% comment %} <a href="https://bing.com">
-        <img
-          src="https://cdn.shopify.com/s/files/1/0602/4976/8102/files/Tanner.jpg?v=1674102821"
-          alt="Tanner McCartney"
-          class="player-img image"
-        >
-      </a> {% endcomment %}
-      <div style="display: flex; ">
+      <div style="display: flex; flex-direction: column; justify-content: center; margin-left: 10px; ">
         <h3 class="fit-content no-margin">
           Aaron <br>
           Signer
@@ -76,5 +76,4 @@
         <p class="fit-content no-margin">PDGA #777777</p>
       </div>
     </div>
-  </div>
-</div>
+  </div> {% endcomment %}

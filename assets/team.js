@@ -14,23 +14,24 @@ const players = {
 }
 
 function generatePlayerCardHtml(player) {
-    return `
-    <a href="https://bing.com">
-      <img
-        src="https://cdn.shopify.com/s/files/1/0602/4976/8102/files/Tanner.jpg?v=1674102821"
-        alt="Tanner McCartney"
-        class="player-img"
-      >
-    </a>
-    <div class="container">
-      <h3 class="fit-content no-margin">
+return `  
+<div class="member card">
+</div>
+<div class="container">
+  <img
+    src="https://cdn.shopify.com/s/files/1/0602/4976/8102/files/Tanner.jpg?v=1674102821"
+    alt="Tanner McCartney"
+    style="border-radius: 11px; width: 290px; border: solid white 1px;"
+  >
+  <div style="display: flex; flex-direction: column; justify-content: center; margin-left: 10px; ">
+    <h3 class="fit-content no-margin">
         ${player.first_name} <br>
         ${player.last_name}
-      </h3>
-      <p class="fit-content no-margin">PDGA #${player.pdga_number}</p>
-      <p></p>
-    </div>
-    `;
+    </h3>
+    <p class="fit-content no-margin">PDGA #${player.pdga_number}</p>
+  </div>
+</div>`
+;
 }
 
 let div = document.getElementById("div");
@@ -38,10 +39,10 @@ console.log(players.premire_league);
 
 for (player of players.premire_league) {
     const div2 = document.createElement('div');
-    div2.classList.add("member");
+    div2.classList.add("outer-card");
     div2.innerHTML = generatePlayerCardHtml(player);
 
-    // div.appendChild(div2);
+    div.appendChild(div2);
 
 }
 
