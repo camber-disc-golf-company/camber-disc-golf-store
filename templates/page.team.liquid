@@ -16,202 +16,65 @@
 <script src="https://kit.fontawesome.com/e48d166edc.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" type="text/css" href="{{ 'team-camber-styles.css' | asset_url }}">
 
+<script async src="../assets/team.js"></script>
+
+<style>
+  .card {
+    /* box-shadow: 2 2 black aliceblue; */
+    /* margin: 1px; */
+    padding: 5px;
+    background-image: url(https://cdn.shopify.com/s/files/1/0602/4976/8102/files/Tanner.jpg?v=1674102821);
+    -webkit-filter: blur(8px);
+    opacity: .5;
+    height: 100%;
+    width: 100%;    
+  }
+
+  .outer-card {
+    box-shadow: 1px 1px 5px 3px black;
+    border-radius: 11px;
+  }
+
+  .image {
+    {% comment %} position: relative;
+    left: -100px;
+    top: 200px; {% endcomment %}
+  }
+
+  .container {
+    position: relative;
+    top: -299px;
+    display: flex;
+  }
+</style>
+
 <h1>Team Camber</h1>
-<div class="team-members">
-  <div class="member">
-    <a href="https://bing.com">
+
+<div id="div" class="team-members">
+  <div class="outer-card">
+    <div class="member card">
+
+    </div>
+    <div class="container">
       <img
         src="https://cdn.shopify.com/s/files/1/0602/4976/8102/files/Tanner.jpg?v=1674102821"
         alt="Tanner McCartney"
-        class="player-img"
+        class="player-img image"
       >
-    </a>
-    <div class="container">
-      <h3 class="fit-content no-margin">
-        Tanner <br>
-        McCartney
-      </h3>
-      <p class="fit-content no-margin">PDGA #97556</p>
-      <p></p>
-    </div>
-  </div>
-  <div class="member">
-    <a href="https://bing.com">
-      <img
-        src="https://cdn.shopify.com/s/files/1/0602/4976/8102/files/Tanner.jpg?v=1674102821"
-        alt="Tanner McCartney"
-        class="player-img"
-      >
-    </a>
-    <div class="container">
-      <h3 class="fit-content no-margin">
-        Tanner <br>
-        McCartney
-      </h3>
-      <p class="fit-content no-margin">PDGA #97556</p>
-      <p></p>
-    </div>
-  </div>
-  <div class="member">
-    <a href="https://bing.com">
-      <img
-        src="https://cdn.shopify.com/s/files/1/0602/4976/8102/files/Tanner.jpg?v=1674102821"
-        alt="Tanner McCartney"
-        class="player-img"
-      >
-    </a>
-    <div class="container">
-      <h3 class="fit-content no-margin">
-        Tanner <br>
-        McCartney
-      </h3>
-      <p class="fit-content no-margin">PDGA #97556</p>
-      <p></p>
-    </div>
-  </div>
-  <div class="member">
-    <a href="https://bing.com">
-      <img
-        src="https://cdn.shopify.com/s/files/1/0602/4976/8102/files/Tanner.jpg?v=1674102821"
-        alt="Tanner McCartney"
-        class="player-img"
-      >
-    </a>
-    <div class="container">
-      <h3 class="fit-content no-margin">
-        Tanner <br>
-        McCartney
-      </h3>
-      <p class="fit-content no-margin">PDGA #97556</p>
-      <p></p>
-    </div>
-  </div>
-  <div class="member">
-    <a href="https://bing.com">
-      <img
-        src="https://cdn.shopify.com/s/files/1/0602/4976/8102/files/Tanner.jpg?v=1674102821"
-        alt="Tanner McCartney"
-        class="player-img"
-      >
-    </a>
-    <div class="container">
-      <h3 class="fit-content no-margin">
-        Tanner <br>
-        McCartney
-      </h3>
-      <p class="fit-content no-margin">PDGA #97556</p>
-      <p></p>
-    </div>
-  </div>
-  <div class="member">
-    <a href="https://bing.com">
-      <img
-        src="https://cdn.shopify.com/s/files/1/0602/4976/8102/files/Tanner.jpg?v=1674102821"
-        alt="Tanner McCartney"
-        class="player-img"
-      >
-    </a>
-    <div class="container">
-      <h3 class="fit-content no-margin">
-        Tanner <br>
-        McCartney
-      </h3>
-      <p class="fit-content no-margin">PDGA #97556</p>
-      <p></p>
-    </div>
-  </div>
-  <!--
-    <div class="member">
-      <div>
-        <a href="https://bing.com">
-          <img
-            src="https://cdn.shopify.com/s/files/1/0602/4976/8102/files/Sam.jpg?v=1674102821"
-            alt="Sam Hockenberry"
-          >
-        </a>
-        <div class="container">
-          <h2>
-            Sam <br>
-            Hockenberry
-          </h2>
-          <p class="title">PDGA #144433</p>
-          <p></p>
-        </div>
+      {% comment %} <a href="https://bing.com">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0602/4976/8102/files/Tanner.jpg?v=1674102821"
+          alt="Tanner McCartney"
+          class="player-img image"
+        >
+      </a> {% endcomment %}
+      <div style="display: flex; ">
+        <h3 class="fit-content no-margin">
+          Aaron <br>
+          Signer
+        </h3>
+        <p class="fit-content no-margin">PDGA #777777</p>
       </div>
     </div>
-  -->
-  <!--
-    <div class="member">
-      <div>
-        <a href="https://bing.com">
-          <img
-            src="https://cdn.shopify.com/s/files/1/0602/4976/8102/files/Tanner.jpg?v=1674102821"
-            alt="Tanner McCartney"
-          >
-        </a>
-        <div class="container">
-          <h2>
-            Hunter <br>
-            Robbins
-          </h2>
-          <p class="title">PDGA #117936</p>
-          <p></p>
-        </div>
-      </div>
-    </div>
-    <div class="member">
-      <div>
-        <a href="https://bing.com">
-          <img
-            src="https://cdn.shopify.com/s/files/1/0602/4976/8102/files/Andrew.png?v=1674102821"
-            alt="Andrew Greenslade"
-          >
-        </a>
-        <div class="container">
-          <h2>
-            Billy <br>
-            Herman
-          </h2>
-          <p class="title">PDGA #144916</p>
-          <p></p>
-        </div>
-      </div>
-    </div>
-    <div class="member">
-      <div>
-        <a href="https://bing.com">
-          <img
-            src="https://cdn.shopify.com/s/files/1/0602/4976/8102/files/Mark.jpg?v=1674102821"
-            alt="Mark Fedorenko"
-          >
-        </a>
-        <div class="container">
-          <h2>
-            Hannah <br>
-            Campbell
-          </h2>
-          <p class="title">PDGA #154010</p>
-          <p></p>
-        </div>
-      </div>
-    </div>
-    <div class="member">
-      <div>
-        <a href="https://bing.com">
-          <img
-            src="https://cdn.shopify.com/s/files/1/0602/4976/8102/files/Sam.jpg?v=1674102821"
-            alt="Sam Hockenberry"
-          >
-        </a>
-        <div class="container">
-          <h2>
-            Baleigh <br>
-            Hopkins
-          </h2>
-          <p class="title">PDGA #137452</p>
-          <p></p>
-        </div>
-      </div>
-    </div>
-  -->
+  </div>
 </div>
