@@ -10,6 +10,11 @@ const players = {
             "last_name": "Hockenberry",
             "pdga_number": 12345
         },
+        {
+            "first_name": "Samuel",
+            "last_name": "Hockenberry",
+            "pdga_number": 12345
+        },
     ]
 }
 
