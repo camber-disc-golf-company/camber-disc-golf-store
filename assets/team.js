@@ -20,6 +20,7 @@ const players = {
 
 function generatePlayerCardHtml(player) {
 return `  
+<a href="/pages/team-member?pdga=${player.pdga_number}">
 <div class="member card">
 </div>
 <div class="container">
@@ -35,7 +36,8 @@ return `
     </h3>
     <p class="fit-content no-margin">PDGA #${player.pdga_number}</p>
   </div>
-</div>`
+</div>
+</a>`
 ;
 }
 

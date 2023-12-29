@@ -16,6 +16,7 @@
 <script src="https://kit.fontawesome.com/e48d166edc.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" type="text/css" href="{{ 'team-camber-styles.css' | asset_url }}">
 
+<script async src="../assets/team.js"></script>
 <script src="{{ 'team.js' | asset_url }}" defer="defer"></script>
 
 <style>
@@ -36,6 +37,7 @@
     box-shadow: 1px 1px 5px 3px black;
     border-radius: 11px;
     position: relative;
+    margin-bottom: 50px;
   }
 
   .image {
@@ -53,29 +55,31 @@
 </style>
 
 <h1>Team Camber</h1>
-<a href="/pages/test-page-1-asdfs-fsfs?a=1">test-page-1-asdfs-fsfs</a>
-
 
 <div id="div" class="team-members">
 
 </div>
 
 {% comment %} <div id="div" class="team-members">
-  <div class="outer-card">
-    <div class="member card">
-    </div>
-    <div class="container">
-      <img
-        src="https://cdn.shopify.com/s/files/1/0602/4976/8102/files/Tanner.jpg?v=1674102821"
-        alt="Tanner McCartney"
-        style="border-radius: 11px; width: 290px; border: solid white 1px;"
-      >
-      <div style="display: flex; flex-direction: column; justify-content: center; margin-left: 10px; ">
-        <h3 class="fit-content no-margin">
-          Aaron <br>
-          Signer
-        </h3>
-        <p class="fit-content no-margin">PDGA #777777</p>
+    <div class="outer-card">
+      <a href="/pages/test-page-1-asdfs-fsfs?a=1">
+
+      <div class="member card">
       </div>
-    </div>
+      <div class="container">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0602/4976/8102/files/Tanner.jpg?v=1674102821"
+          alt="Tanner McCartney"
+          style="border-radius: 11px; width: 290px; border: solid white 1px;"
+        >
+        <div style="display: flex; flex-direction: column; justify-content: center; margin-left: 10px; ">
+          <h3 class="fit-content no-margin">
+            Aaron <br>
+            Signer
+          </h3>
+          <p class="fit-content no-margin">PDGA #777777</p>
+        </div>
+      </a>
+
+      </div>
   </div> {% endcomment %}

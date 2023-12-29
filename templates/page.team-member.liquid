@@ -1,1 +1,16 @@
+<script>
+    import myjson from "../assets/myjson.json" assert { type: "json" };
+    console.log(myjson);
+
+    const currentUrl = window.location.href;
+    console.log(currentUrl);    
+
+    const params = new Proxy(new URLSearchParams(window.location.search), {
+        get: (searchParams, prop) => searchParams.get(prop),
+      });
+
+      let value = params.pdga;
+      console.log('pdga: ' + value);
+</script>
+
 <p>hello</p>
